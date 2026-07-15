@@ -29,3 +29,21 @@ document.getElementById("fileInput").addEventListener("change", function () {
     }
 
 });
+
+function summarizeDocument() {
+
+    const text = document.getElementById("documentText").innerText;
+
+    if (text.trim() === "") {
+        alert("Please upload a TXT document first.");
+        return;
+    }
+
+    document.getElementById("summary").innerHTML = `
+        <h3>🤖 AI Summary</h3>
+        <p>
+        This is a demo summary. In the next version, a real AI model
+        will analyze your document and generate an accurate summary.
+        </p>
+    `;
+}
