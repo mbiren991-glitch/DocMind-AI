@@ -3,111 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DocMind AI</title>
-
+    <title>DocMind AI - Chat with Your Documents</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-
-    <div class="logo">
-        📄 DocMind AI
-    </div>
+    <div class="logo">📄 DocMind AI</div>
 
     <nav>
-
         <a href="#">Home</a>
         <a href="#">Features</a>
         <a href="#">Pricing</a>
         <a href="#">Login</a>
-
     </nav>
-
 </header>
 
 <section class="hero">
 
-<h1>Chat with your Documents using AI</h1>
+    <h1>Chat with Your Documents Using AI</h1>
 
-<p>
-Upload PDFs, Word documents, or text files and get instant summaries,
-translations, answers, and insights.
-</p>
-
-<div class="upload-box">
-    <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt">
-    <br><br>
-    <button onclick="uploadFile()">📄 Choose Document</button>
-
-    <p id="fileName">
-        No document selected
+    <p>
+        Upload PDFs, Word files, or text documents.
+        Get instant summaries, translations, explanations,
+        and answers powered by AI.
     </p>
-    <div id="documentText"></div>
-    <br>
 
-<button onclick="summarizeDocument()">🤖 Summarize Document</button>
-
-<div id="summary"></div>
-    <hr>
-
-<h2>💬 Chat with Your Document</h2>
-
-<input
-    type="text"
-    id="question"
-    placeholder="Ask a question about your document...">
-
-<br><br>
-
-<button onclick="askAI()">Ask AI</button>
-
-<div id="answer"></div>
-    <br>
-
-<h2>⚡ AI Tools</h2>
-
-<button onclick="summarizeDocument()">📝 Summarize</button>
-
-<button onclick="translateDocument()">🌍 Translate</button>
-
-<button onclick="rewriteDocument()">✍️ Rewrite</button>
-
-<div id="toolResult"></div>
-</div>
+    <button>📄 Upload Document</button>
 
 </section>
 
 <section class="features">
 
-<div class="card">
-<h2>📄 PDF Summary</h2>
-<p>Summarize long PDFs instantly.</p>
-</div>
+    <div class="card">
+        <h2>📄 PDF Summary</h2>
+        <p>Summarize long PDFs in seconds.</p>
+    </div>
 
-<div class="card">
-<h2>💬 AI Chat</h2>
-<p>Ask questions about your document.</p>
-</div>
+    <div class="card">
+        <h2>💬 AI Chat</h2>
+        <p>Ask questions about any document.</p>
+    </div>
 
-<div class="card">
-<h2>🌍 Translate</h2>
-<p>Translate documents into many languages.</p>
-</div>
+    <div class="card">
+        <h2>🌍 Translation</h2>
+        <p>Translate documents into multiple languages.</p>
+    </div>
 
-<div class="card">
-<h2>📝 Rewrite</h2>
-<p>Rewrite text with AI.</p>
-</div>
+    <div class="card">
+        <h2>✍️ Rewrite</h2>
+        <p>Improve and rewrite your text with AI.</p>
+    </div>
 
 </section>
 
 <footer>
-
-<p>
-© 2026 DocMind AI
-</p>
-
+    <p>© 2026 DocMind AI. All Rights Reserved.</p>
 </footer>
 
 <script src="app.js"></script>
