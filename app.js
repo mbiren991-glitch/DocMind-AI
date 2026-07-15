@@ -1,5 +1,12 @@
-const uploadButton = document.querySelector(".hero button");
+function uploadFile() {
+    document.getElementById("fileInput").click();
+}
 
-uploadButton.addEventListener("click", function () {
-    alert("📄 Document upload feature is coming soon!");
+document.getElementById("fileInput").addEventListener("change", function () {
+
+    if (this.files.length > 0) {
+        document.getElementById("fileName").innerHTML =
+            "✅ " + this.files[0].name;
+    }
+
 });
