@@ -19,7 +19,8 @@ document.getElementById("fileInput").addEventListener("change", function () {
 
             alert("Document Loaded Successfully!");
 
-            console.log(e.target.result);
+            document.getElementById("documentText").innerHTML =
+"<h3>📄 Document Content</h3><pre>" + e.target.result + "</pre>";
 
         };
 
