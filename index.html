@@ -35,9 +35,15 @@ Upload PDFs, Word documents, or text files and get instant summaries,
 translations, answers, and insights.
 </p>
 
-<button>
-Upload Document
-</button>
+<div class="upload-box">
+    <input type="file" id="fileInput" accept=".pdf,.doc,.docx,.txt">
+    <br><br>
+    <button onclick="uploadFile()">📄 Choose Document</button>
+
+    <p id="fileName">
+        No document selected
+    </p>
+</div>
 
 </section>
 
