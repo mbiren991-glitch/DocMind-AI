@@ -89,3 +89,37 @@ footer{
     padding:30px;
     color:#94a3b8;
 }
+.upload-box{
+    margin-top:30px;
+    background:#1e293b;
+    padding:30px;
+    border:2px dashed #8b5cf6;
+    border-radius:15px;
+    max-width:400px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+
+.upload-box input{
+    display:none;
+}
+
+.upload-box button{
+    background:#8b5cf6;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:10px;
+    font-size:16px;
+    cursor:pointer;
+}
+
+.upload-box button:hover{
+    background:#7c3aed;
+}
+
+#fileName{
+    margin-top:15px;
+    color:#cbd5e1;
+}
