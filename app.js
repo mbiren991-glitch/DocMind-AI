@@ -64,3 +64,16 @@ function askAI() {
         </p>
     `;
 }
+function translateDocument() {
+    document.getElementById("toolResult").innerHTML = `
+        <h3>🌍 Translation</h3>
+        <p>This is a demo translation. Real AI translation will be added later.</p>
+    `;
+}
+
+function rewriteDocument() {
+    document.getElementById("toolResult").innerHTML = `
+        <h3>✍️ Rewritten Text</h3>
+        <p>This is a demo rewritten version. Real AI rewriting will be added later.</p>
+    `;
+}
