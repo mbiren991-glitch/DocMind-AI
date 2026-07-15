@@ -4,9 +4,27 @@ function uploadFile() {
 
 document.getElementById("fileInput").addEventListener("change", function () {
 
-    if (this.files.length > 0) {
-        document.getElementById("fileName").innerHTML =
-            "✅ " + this.files[0].name;
+    const file = this.files[0];
+
+    if (!file) return;
+
+    document.getElementById("fileName").innerHTML =
+        "✅ " + file.name;
+
+    if (file.name.endsWith(".txt")) {
+
+        const reader = new FileReader();
+
+        reader.onload = function(e) {
+
+            alert("Document Loaded Successfully!");
+
+            console.log(e.target.result);
+
+        };
+
+        reader.readAsText(file);
+
     }
 
 });
