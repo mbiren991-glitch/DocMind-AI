@@ -47,3 +47,20 @@ function summarizeDocument() {
         </p>
     `;
 }
+function askAI() {
+
+    const question = document.getElementById("question").value;
+
+    if (question.trim() === "") {
+        alert("Please enter a question.");
+        return;
+    }
+
+    document.getElementById("answer").innerHTML = `
+        <h3>🤖 AI Answer</h3>
+        <p>
+        This is a demo answer for: <b>${question}</b>.
+        In the next version, a real AI model will answer questions based on your uploaded document.
+        </p>
+    `;
+}
